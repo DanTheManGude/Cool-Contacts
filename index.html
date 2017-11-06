@@ -26,6 +26,14 @@
       }
     </style>
 
+    <script>
+        function preview() {
+            console.log("Preview");
+        }
+        function submit() {
+        }
+    </script>
+
   </head>
 
   <body>
@@ -54,7 +62,15 @@
 
           <h1 class="mt-5">Make a Cool Contact Photo</h1>
           <p class="lead"></p>
-          
+          <form style="zoom:150%;" action="javascript:;" onsubmit="preview()">
+            Color:
+            <input id="colur" value="0f0186">
+            Initials:
+            <input id="it" type="text" name="initials"  value="CC">
+            <input type="submit" value="Preview">
+          </form>
+          <br/>
+          <button class="btn btn-danger" onclick="submit()" type="button">Download</button>
         </div>
       </div>
     </div>
