@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Making a Cool Contact photo">
     <meta name="author" content="Dan Gude">
-
+    <script src="jscolor.js"></script>
     <title>Cool Contacts</title>
 
     <!-- Bootstrap core CSS -->
@@ -22,13 +22,17 @@
         body {
           padding-top: 56px;
         }
-
+      }
+      #initials {
+        font-family: 'monaco', 'Menlo', 'Courier New', 'Consolas', 'Lucida Console', monospace;
+        font-size: 210px;
       }
     </style>
 
     <script>
         function preview() {
-            console.log("Preview");
+            $("#initials").text($("#it").val());
+            $(".cir").css("fill", $("#colur").val())
         }
         function submit() {
         }
