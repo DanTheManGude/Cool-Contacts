@@ -48,6 +48,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link" href="https://github.com/DanTheManGude/Cool-Contacts">Source</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="https://dangude.com">Dan Gude</a>
             </li>
           </ul>
@@ -59,14 +62,19 @@
     <div class="container">
       <div class="row">
         <div style="padding-top:2em;"class="col-lg-12 text-center">
-
+            <svg id="diagram" height="400" width="400">
+                <circle class="cir" cx="200" cy="200" r="200" fill="#0f0186"/>
+                <circle cx="200" cy="200" r="180" fill="white"/>
+                <circle class="cir" cx="200" cy="200" r="160" fill="#0f0186"/>
+                <text id="initials" x="75" y="280" fill="white">CC</text>
+            </svg>
           <h1 class="mt-5">Make a Cool Contact Photo</h1>
           <p class="lead"></p>
           <form style="zoom:150%;" action="javascript:;" onsubmit="preview()">
             Color:
-            <input id="colur" value="0f0186">
+            <input id="colur" class="jscolor" size="7" maxlength="6" value="0f0186">
             Initials:
-            <input id="it" type="text" name="initials"  value="CC">
+            <input id="it" type="text" name="initials" size="3" maxlength="2" value="CC">
             <input type="submit" value="Preview">
           </form>
           <br/>
