@@ -5,17 +5,18 @@ function preview() {
 }
 
 function submit() {
-    saveSvgAsPng(document.getElementById("diagram"), "Cool-Contact.jpg");
+    saveSvgAsPng(document.getElementById("diagram"), "Cool-Contact-" + $("#it").val() + ".jpg");
 }
 
-function randColor (){
+function randColor() {
     newColor = randomColor( {luminosity: 'dark'} );
     $("#colur").val(newColor);
     $("#colur").css("background-color", newColor);
     preview();
 }
 
-function setInitials(newInitials) {
+function newEntry(newInitials) {
     $("#it").val(newInitials);
-    preview();
+    randColor()
+    submit();
 }
