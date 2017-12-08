@@ -14,3 +14,8 @@ function randColor (){
     $("#colur").css("background-color", newColor);
     preview();
 }
+
+function setInitials(newInitials) {
+    $("#it").val(newInitials);
+    preview();
+}
