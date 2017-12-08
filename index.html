@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Making a Cool Contact photo">
     <meta name="author" content="Dan Gude">
+    <script src="index.js"></script>
     <script src="jscolor.js"></script>
     <script src="saveSvgAsPng.js"></script>
 
@@ -39,16 +40,6 @@
       }
 
     </style>
-
-    <script>
-        function preview() {
-            $("#initials").text($("#it").val());
-            $(".cir").css("fill", $("#colur").val())
-        }
-        function submit() {
-            saveSvgAsPng(document.getElementById("diagram"), "contact.png");
-        }
-    </script>
 
   </head>
 
