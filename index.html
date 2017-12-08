@@ -10,6 +10,7 @@
     <script src="index.js"></script>
     <script src="jscolor.js"></script>
     <script src="saveSvgAsPng.js"></script>
+    <script src="randomColor.js"></script>
 
     <title>Cool Contacts</title>
 
@@ -76,14 +77,18 @@
                 <text id="initials" x="150" y="560" fill="white">CC</text>
             </svg>
           <h1 class="mt-5">Make a Cool Contact Photo</h1>
-          <p class="lead"></p>
+          <p class="lead">
+              <button class="btn btn-success" onclick="randColor()" type="button">Random Color</button>
+          </p>
+
           <form style="zoom:150%;" action="javascript:;" onchange="preview()">
             Color:
-            <input id="colur" class="jscolor" size="7" maxlength="6" value="0f0186">
+            <input id="colur" class="jscolor {onFineChange:'preview()'}" size="7" maxlength="6" value="0f0186">
             Initials:
             <input id="it" type="text" name="initials" size="3" maxlength="2" value="CC">
           </form>
           <br/>
+
           <button class="btn btn-primary" onclick="submit()" type="button">Download</button>
         </div>
       </div>

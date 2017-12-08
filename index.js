@@ -7,3 +7,10 @@ function preview() {
 function submit() {
     saveSvgAsPng(document.getElementById("diagram"), "Cool-Contact.jpg");
 }
+
+function randColor (){
+    newColor = randomColor( {luminosity: 'dark'} );
+    $("#colur").val(newColor);
+    $("#colur").css("background-color", newColor);
+    preview();
+}
